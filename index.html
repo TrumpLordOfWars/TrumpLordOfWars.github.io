@@ -1,70 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Trump Lord of Wars</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trump Lord of Wars</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-<style>
+    body {
+      background: linear-gradient(to bottom, #120b08, #000000);
+      color: white;
+      font-family: Georgia, serif;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-body{
-background:black;
-color:white;
-font-family:Georgia,serif;
-text-align:center;
-padding:40px;
-}
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-h1{
-font-size:60px;
-color:gold;
-margin-bottom:10px;
-}
+    h1 {
+      font-size: 64px;
+      color: #d4af37;
+      margin-bottom: 10px;
+      text-shadow: 0 0 20px rgba(255, 180, 0, 0.35);
+    }
 
-h2{
-font-size:30px;
-color:#ffcc00;
-}
+    h2 {
+      font-size: 34px;
+      color: #f3c65f;
+      margin-bottom: 12px;
+      text-shadow: 0 0 14px rgba(255, 120, 0, 0.25);
+    }
 
-img{
-width:400px;
-margin-top:30px;
-border-radius:10px;
-box-shadow:0 0 30px red;
-}
+    .subtitle {
+      font-size: 18px;
+      color: #d7c2a3;
+      margin-bottom: 30px;
+    }
 
-.button{
-margin-top:40px;
-display:inline-block;
-padding:15px 30px;
-background:gold;
-color:black;
-font-size:20px;
-text-decoration:none;
-border-radius:10px;
-}
+    .hero-image {
+      width: 100%;
+      max-width: 520px;
+      display: block;
+      margin: 0 auto 30px auto;
+      border-radius: 16px;
+      box-shadow: 0 0 35px rgba(255, 80, 0, 0.35);
+      border: 2px solid rgba(212, 175, 55, 0.4);
+    }
 
-.button:hover{
-background:#ffcc00;
-}
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 16px 34px;
+      background: linear-gradient(to bottom, #f3c65f, #b8860b);
+      color: #1a1208;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 0 18px rgba(255, 180, 0, 0.35);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
 
-</style>
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 28px rgba(255, 180, 0, 0.5);
+    }
 
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .button {
+        font-size: 18px;
+        padding: 14px 24px;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <h1>TRUMP</h1>
+    <h2>LORD OF WARS</h2>
+    <p class="subtitle">TLW</p>
 
-<h1>TRUMP</h1>
-<h2>LORD OF WARS</h2>
+    <img src="tlw.png" alt="Trump Lord of Wars" class="hero-image" />
 
-<p>TLW</p>
-
-<p>The rise of the war lord.</p>
-
-<img src="tlw.png" style="width:500px; margin-top:40px; border-radius:10px; box-shadow:0 0 40px red;">
-  
-<br>
-
-<a class="button" href="#">Enter the Realm</a>
-
+    <a class="button" href="#">Enter the Realm</a>
+  </div>
 </body>
 </html>
